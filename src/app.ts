@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 10101;
 
 const app = express().use(bodyParser.json());
 
-app.use('/hola', router)
+app.use('/', router)
 
 app.listen(PORT, () => {
     console.log("Servidor ejecutándose en el puerto: ", PORT);
